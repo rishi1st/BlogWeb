@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+
+
+    <style>
+          body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            background-color: #121212;
+          }
+        
+          .home {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(145deg, #1e1e1e, #2a2a2a);
+            text-align: center;
+            padding: 2rem;
+          }
+        
+          .home-container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+          }
+        
+          .home-content {
+            flex: 1;
+            min-width: 300px;
+            text-align: left;
+          }
+        
+          .home-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(90deg, #ff79c6, #8be9fd);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        
+          .home-content p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #cccccc;
+            margin-bottom: 2rem;
+          }
+        
+          .cta-buttons {
+            display: flex;
+            gap: 1rem;
+          }
+        
+          .btn-primary,
+          .btn-secondary {
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+          }
+        
+          .btn-primary {
+            background-color: #ff79c6;
+            color: #ffffff;
+          }
+        
+          .btn-primary:hover {
+            background-color: #ff4eae;
+            transform: translateY(-2px);
+          }
+        
+          .btn-secondary {
+            background-color: #333333;
+            color: #ffffff;
+            border: 1px solid #666666;
+          }
+        
+          .btn-secondary:hover {
+            background-color: #555555;
+            transform: translateY(-2px);
+          }
+        
+          .home-image {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            justify-content: center;
+          }
+        
+          .home-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+          }
+        
+          /* Responsive Design */
+          @media (max-width: 768px) {
+            .home {
+              text-align: center;
+            }
+        
+            .home-container {
+              flex-direction: column;
+            }
+        
+            .home-content {
+              text-align: center;
+            }
+          }
+        </style>
+        
+  </head>
+  <body>
+    <nav>
+      <div class="containerlg">
+        <div class="logo">BlogWeb</div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="notes.html">Notes</a>
+          <button id="categorylg">Category</button>
+          <div class="sarchbar">
+            <input type="text" placeholder="Search Blog..." />
+          </div>
+          <div class="categories">
+                    <ul>
+                      <li><a href="">Technology</a></li>
+                      <li><a href="">Business</a></li>
+                      <li><a href="">Entertainment</a></li>
+                    </ul>
+                  </div>      
+          <button id="postNewBlog" style="background-color: #474747;"><i class="fa-solid fa-pen-to-square"></i></button>
+          
+        </div>
+      </div>
+      <div class="containersm">
+        <div class="header1">
+          <div class="logo">BlogWeb</div>
+          <div class="items">
+          <button id="postNewBlog"><i class="fa-solid fa-pen-to-square"></i></button>
+            <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+            <div class="mobilelinks">
+                    <a href="index.html">Home</a>
+                    <a href="notes.html">Notes</a>
+                    
+                    <!-- Dropdown for Categories -->
+                    <div class="dropdown">
+                      <a href="#" class="dropdown-btn">Category</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Entertainment</a></li>
+                      </ul>
+                    </div>
+                  </div>
+          </div>
+        </div>
+        <div class="header2">
+          <div class="searchbar">
+            <input type="text" placeholder="Search Blog..." />
+          </div>
+        </div>
+      </div>
+    </nav>
+   <!-- section start -->
+   <section class="home">
+          <div class="home-container">
+            <div class="home-content">
+              <h1>Welcome to BlogWeb</h1>
+              <p>
+                Discover inspiring blogs, share your thoughts, and connect with like-minded individuals.
+                Explore categories like Technology, Business, and Entertainment.
+              </p>
+              <div class="cta-buttons">
+                <a href="notes.html" class="btn-primary">Get Started</a>
+                <a href="#categories" class="btn-secondary">Explore Categories</a>
+              </div>
+            </div>
+            <div class="home-image">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHsnPwbUWdPoXzgiRfY6HNIKlEOeXYPwak7A&s" />
+            </div>
+          </div>
+        </section>
+        
+    <!-- section end -->
+    <script src="./script.js"></script>
+  </body>
+</html>
