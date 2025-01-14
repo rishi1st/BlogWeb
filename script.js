@@ -77,6 +77,6 @@ dropdownLinks.forEach(link => {
 //     mobileLinks.style.display = 'none';
 // })
 
-// adding home Page funcanlity
+
 
 
